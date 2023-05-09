@@ -1,0 +1,47 @@
+{
+  "expo": {
+    "name": "speech-gpt",
+    "slug": "speech-gpt",
+    "version": "1.0.2",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "automatic",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "buildNumber": "1.0.2",
+      "bundleIdentifier": "com.tofusnafu.speechgpt"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.tofusnafu.speechgpt"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "145ab94b-862d-48d3-b522-0c07667a97c9"
+      }
+    },
+    "plugins": [
+      [
+        "@react-native-voice/voice",
+        {
+          "microphonePermission": "Allow Speech-GPT to access the microphone to record user speech",
+          "speechRecognitionPermission": "Allow Speech-GPT to securely recognize user speech"
+        }
+      ]
+    ]
+  }
+}
